@@ -20,6 +20,13 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
+
+        <receiver android:name=".SongReceiver">
+            <intent-filter>
+                <action android:name="com.teamtreehouse.intent.action.SHARE_SONG"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
